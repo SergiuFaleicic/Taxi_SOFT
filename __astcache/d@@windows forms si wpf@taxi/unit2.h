@@ -32,6 +32,22 @@ __published:	// IDE-managed Components
 	TDataSource *DataSource1;
 	TFDQuery *FDQuery2;
 	TDataSource *DataSource2;
+	TDataSource *DataSource3;
+	TFDQuery *FDQuery3;
+	TDataSource *DataSource4;
+	TFDQuery *FDQuery4;
+	TDataSource *DataSource5;
+	TFDQuery *FDQuery5;
+	TDataSource *DataSource6;
+	TFDQuery *FDQuery6;
+	TDataSource *DataSource7;
+	TFDQuery *FDQuery7;
+	TDataSource *DataSource8;
+	TFDQuery *FDQuery8;
+	TFDQuery *INSAUTO;
+	TFDQuery *UPDAUTO;
+	TFDQuery *DELAUTO;
+	TFDQuery *INSCOMANDA;
 private:	// User declarations
 public:		// User declarations
 	__fastcall TDataModule2(TComponent* Owner);

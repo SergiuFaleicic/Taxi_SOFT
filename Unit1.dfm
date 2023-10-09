@@ -3,7 +3,7 @@ object Form1: TForm1
   Top = 0
   Caption = 'Form1'
   ClientHeight = 622
-  ClientWidth = 929
+  ClientWidth = 994
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -15,35 +15,36 @@ object Form1: TForm1
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 929
+    Width = 994
     Height = 41
     Align = alTop
     TabOrder = 0
+    ExplicitWidth = 990
   end
   object Panel2: TPanel
     Left = 0
     Top = 41
-    Width = 929
+    Width = 994
     Height = 535
     Align = alClient
     TabOrder = 1
-    ExplicitTop = 73
-    ExplicitWidth = 1212
-    ExplicitHeight = 528
+    ExplicitWidth = 990
+    ExplicitHeight = 523
     object PageControl1: TPageControl
       Left = 1
       Top = 1
-      Width = 927
+      Width = 992
       Height = 533
       ActivePage = TabSheet10
       Align = alClient
       TabOrder = 0
-      ExplicitWidth = 1210
+      ExplicitWidth = 988
+      ExplicitHeight = 521
       object TabSheet1: TTabSheet
         Caption = 'AUTENTIFICARE'
         object Panel4: TPanel
-          Left = 40
-          Top = 72
+          Left = 128
+          Top = 100
           Width = 673
           Height = 281
           Color = clInactiveCaption
@@ -1699,30 +1700,1727 @@ object Form1: TForm1
       object TabSheet2: TTabSheet
         Caption = 'COMANDA'
         ImageIndex = 1
+        object Panel21: TPanel
+          Left = 337
+          Top = 0
+          Width = 647
+          Height = 503
+          Align = alClient
+          Caption = ' '
+          Color = clHighlight
+          ParentBackground = False
+          TabOrder = 0
+          object DBGrid9: TDBGrid
+            Left = 1
+            Top = 1
+            Width = 645
+            Height = 501
+            Align = alClient
+            Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+            TabOrder = 0
+            TitleFont.Charset = DEFAULT_CHARSET
+            TitleFont.Color = clWindowText
+            TitleFont.Height = -12
+            TitleFont.Name = 'Segoe UI'
+            TitleFont.Style = []
+            Columns = <
+              item
+                Expanded = False
+                FieldName = 'AUTOMOBIL_ID'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Title.Alignment = taCenter
+                Title.Caption = 'NR'
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'NR_AUTO'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Title.Caption = 'NR INMATR'
+                Width = 95
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'DENUMIRE_1'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Title.Caption = 'MARCA'
+                Width = 70
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'DENUMIRE'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Title.Caption = 'MODEL'
+                Width = 53
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'TIP_CAROSERIE'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Title.Caption = 'CAROSERIE'
+                Width = 81
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'NUME_CULOARE'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Title.Caption = 'CULOAREA'
+                Width = 78
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'MOTOR'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Title.Caption = 'CP'
+                Width = 40
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'COMBUSTIBIL'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Width = 112
+                Visible = True
+              end>
+          end
+        end
+        object Panel22: TPanel
+          Left = 0
+          Top = 0
+          Width = 337
+          Height = 503
+          Align = alLeft
+          Caption = ' '
+          TabOrder = 1
+          object PageControl3: TPageControl
+            Left = 1
+            Top = 1
+            Width = 335
+            Height = 501
+            ActivePage = TabSheet17
+            Align = alClient
+            TabOrder = 0
+            object TabSheet16: TTabSheet
+              Caption = 'MAIN'
+              object SpeedButton34: TSpeedButton
+                Left = 40
+                Top = 32
+                Width = 225
+                Height = 33
+                Caption = 'INREGISTREAZA'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+              end
+              object SpeedButton35: TSpeedButton
+                Left = 40
+                Top = 88
+                Width = 225
+                Height = 33
+                Caption = 'EDITARE'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+              end
+              object SpeedButton36: TSpeedButton
+                Left = 40
+                Top = 152
+                Width = 225
+                Height = 41
+                Caption = 'ELIMINARE'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+              end
+              object SpeedButton38: TSpeedButton
+                Left = 40
+                Top = 360
+                Width = 225
+                Height = 57
+                Caption = 'CAUTARE'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+              end
+            end
+            object TabSheet17: TTabSheet
+              Caption = 'INSERARE'
+              ImageIndex = 1
+              object SpeedButton39: TSpeedButton
+                Left = 263
+                Top = 16
+                Width = 34
+                Height = 122
+                Cursor = crHandPoint
+                Caption = '...'
+                Font.Charset = DEFAULT_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Segoe UI'
+                Font.Style = [fsBold]
+                ParentFont = False
+                OnClick = SpeedButton39Click
+              end
+              object SpeedButton40: TSpeedButton
+                Left = 263
+                Top = 144
+                Width = 34
+                Height = 26
+                Cursor = crHandPoint
+                Caption = '...'
+                Font.Charset = DEFAULT_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Segoe UI'
+                Font.Style = [fsBold]
+                ParentFont = False
+                OnClick = SpeedButton40Click
+              end
+              object SpeedButton43: TSpeedButton
+                Left = 72
+                Top = 377
+                Width = 129
+                Height = 33
+                Caption = 'EXECUTA'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                OnClick = SpeedButton43Click
+              end
+              object SpeedButton44: TSpeedButton
+                Left = 72
+                Top = 416
+                Width = 129
+                Height = 33
+                Caption = 'ANULEAZA'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+              end
+              object SpeedButton37: TSpeedButton
+                Left = 263
+                Top = 176
+                Width = 34
+                Height = 90
+                Cursor = crHandPoint
+                Caption = '...'
+                Font.Charset = DEFAULT_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Segoe UI'
+                Font.Style = [fsBold]
+                ParentFont = False
+                OnClick = SpeedButton37Click
+              end
+              object Edit16: TEdit
+                Left = 24
+                Top = 144
+                Width = 225
+                Height = 26
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 0
+                TextHint = 'CONDUCATOR'
+                OnKeyPress = Edit3KeyPress
+              end
+              object Edit17: TEdit
+                Left = 24
+                Top = 176
+                Width = 225
+                Height = 26
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 1
+                TextHint = 'RAION DESTINATIE'
+                OnKeyPress = Edit3KeyPress
+              end
+              object Edit19: TEdit
+                Left = 24
+                Top = 240
+                Width = 225
+                Height = 26
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 2
+                TextHint = 'STRADA DESTINATIE'
+              end
+              object Edit20: TEdit
+                Left = 24
+                Top = 272
+                Width = 113
+                Height = 26
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 3
+                TextHint = 'KILOMETRAJ'
+              end
+              object Edit18: TEdit
+                Left = 24
+                Top = 208
+                Width = 225
+                Height = 26
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 4
+                TextHint = 'LOCALIATEA DESTINATIE'
+                OnKeyPress = Edit3KeyPress
+              end
+              object Edit21: TEdit
+                Left = 152
+                Top = 272
+                Width = 97
+                Height = 26
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 5
+                TextHint = 'COST/KM'
+              end
+              object Edit22: TEdit
+                Left = 24
+                Top = 304
+                Width = 225
+                Height = 26
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 6
+                TextHint = 'SUMA CALATORIEI'
+              end
+              object Edit23: TEdit
+                Left = 24
+                Top = 336
+                Width = 225
+                Height = 26
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 7
+                TextHint = 'NOTA'
+              end
+              object Memo1: TMemo
+                Left = 24
+                Top = 16
+                Width = 225
+                Height = 122
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Lines.Strings = (
+                  '')
+                ParentFont = False
+                ScrollBars = ssVertical
+                TabOrder = 8
+                OnKeyPress = Edit3KeyPress
+              end
+            end
+            object TabSheet18: TTabSheet
+              Caption = 'EDITARE'
+              ImageIndex = 2
+              object SpeedButton41: TSpeedButton
+                Left = 263
+                Top = 16
+                Width = 34
+                Height = 121
+                Cursor = crHandPoint
+                Caption = '...'
+                Font.Charset = DEFAULT_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Segoe UI'
+                Font.Style = [fsBold]
+                ParentFont = False
+              end
+              object SpeedButton42: TSpeedButton
+                Left = 263
+                Top = 153
+                Width = 34
+                Height = 26
+                Cursor = crHandPoint
+                Caption = '...'
+                Font.Charset = DEFAULT_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Segoe UI'
+                Font.Style = [fsBold]
+                ParentFont = False
+              end
+              object SpeedButton45: TSpeedButton
+                Left = 263
+                Top = 185
+                Width = 34
+                Height = 98
+                Cursor = crHandPoint
+                Caption = '...'
+                Font.Charset = DEFAULT_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Segoe UI'
+                Font.Style = [fsBold]
+                ParentFont = False
+              end
+              object SpeedButton46: TSpeedButton
+                Left = 80
+                Top = 385
+                Width = 129
+                Height = 33
+                Caption = 'EXECUTA'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+              end
+              object SpeedButton47: TSpeedButton
+                Left = 80
+                Top = 424
+                Width = 129
+                Height = 33
+                Caption = 'ANULEAZA'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+              end
+              object Edit25: TEdit
+                Left = 32
+                Top = 153
+                Width = 225
+                Height = 26
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 0
+                TextHint = 'CONDUCATOR'
+                OnKeyPress = Edit3KeyPress
+              end
+              object Edit26: TEdit
+                Left = 32
+                Top = 185
+                Width = 225
+                Height = 26
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 1
+                TextHint = 'RAION DESTINATIE'
+                OnKeyPress = Edit3KeyPress
+              end
+              object Edit27: TEdit
+                Left = 32
+                Top = 225
+                Width = 225
+                Height = 26
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 2
+                TextHint = 'LOCALIATEA DESTINATIE'
+                OnKeyPress = Edit3KeyPress
+              end
+              object Edit28: TEdit
+                Left = 32
+                Top = 257
+                Width = 225
+                Height = 26
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 3
+                TextHint = 'STRADA DESTINATIE'
+              end
+              object Edit29: TEdit
+                Left = 160
+                Top = 289
+                Width = 97
+                Height = 26
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 4
+                TextHint = 'COST/KM'
+              end
+              object Edit30: TEdit
+                Left = 32
+                Top = 289
+                Width = 113
+                Height = 26
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 5
+                TextHint = 'KILOMETRAJ'
+              end
+              object Edit31: TEdit
+                Left = 32
+                Top = 321
+                Width = 225
+                Height = 26
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 6
+                TextHint = 'SUMA CALATORIEI'
+              end
+              object Edit32: TEdit
+                Left = 32
+                Top = 353
+                Width = 225
+                Height = 26
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 7
+                TextHint = 'NOTA'
+              end
+              object Memo2: TMemo
+                Left = 32
+                Top = 16
+                Width = 225
+                Height = 121
+                TabOrder = 8
+              end
+            end
+          end
+        end
       end
       object TabSheet3: TTabSheet
         Caption = 'AUTOMOBIL'
         ImageIndex = 2
+        OnShow = TabSheet3Show
+        object Panel17: TPanel
+          Left = 0
+          Top = 0
+          Width = 337
+          Height = 503
+          Align = alLeft
+          Caption = ' '
+          TabOrder = 0
+          object PageControl2: TPageControl
+            Left = 1
+            Top = 1
+            Width = 335
+            Height = 501
+            ActivePage = TabSheet13
+            Align = alClient
+            TabHeight = 1
+            TabOrder = 0
+            TabWidth = 1
+            object TabSheet13: TTabSheet
+              Caption = 'MAIN'
+              object SpeedButton15: TSpeedButton
+                Left = 40
+                Top = 32
+                Width = 225
+                Height = 33
+                Caption = 'INREGISTREAZA'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                OnClick = SpeedButton15Click
+              end
+              object SpeedButton16: TSpeedButton
+                Left = 40
+                Top = 88
+                Width = 225
+                Height = 33
+                Caption = 'EDITARE'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                OnClick = SpeedButton16Click
+              end
+              object SpeedButton17: TSpeedButton
+                Left = 40
+                Top = 152
+                Width = 225
+                Height = 41
+                Caption = 'ELIMINARE'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                OnClick = SpeedButton17Click
+              end
+              object SpeedButton18: TSpeedButton
+                Left = 40
+                Top = 289
+                Width = 225
+                Height = 57
+                Caption = 'SELECTARE'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                OnClick = SpeedButton18Click
+              end
+              object SpeedButton19: TSpeedButton
+                Left = 40
+                Top = 352
+                Width = 225
+                Height = 57
+                Caption = 'ANULARE'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                OnClick = SpeedButton19Click
+              end
+            end
+            object TabSheet14: TTabSheet
+              Caption = 'INSERARE'
+              ImageIndex = 1
+              object SpeedButton20: TSpeedButton
+                Left = 263
+                Top = 16
+                Width = 34
+                Height = 26
+                Cursor = crHandPoint
+                Caption = '...'
+                Font.Charset = DEFAULT_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Segoe UI'
+                Font.Style = [fsBold]
+                ParentFont = False
+                OnClick = SpeedButton20Click
+              end
+              object SpeedButton21: TSpeedButton
+                Left = 263
+                Top = 48
+                Width = 34
+                Height = 26
+                Cursor = crHandPoint
+                Caption = '...'
+                Font.Charset = DEFAULT_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Segoe UI'
+                Font.Style = [fsBold]
+                ParentFont = False
+                OnClick = SpeedButton21Click
+              end
+              object SpeedButton22: TSpeedButton
+                Left = 263
+                Top = 88
+                Width = 34
+                Height = 26
+                Cursor = crHandPoint
+                Caption = '...'
+                Font.Charset = DEFAULT_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Segoe UI'
+                Font.Style = [fsBold]
+                ParentFont = False
+                OnClick = SpeedButton22Click
+              end
+              object SpeedButton23: TSpeedButton
+                Left = 263
+                Top = 128
+                Width = 34
+                Height = 26
+                Cursor = crHandPoint
+                Caption = '...'
+                Font.Charset = DEFAULT_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Segoe UI'
+                Font.Style = [fsBold]
+                ParentFont = False
+                OnClick = SpeedButton23Click
+              end
+              object SpeedButton24: TSpeedButton
+                Left = 72
+                Top = 328
+                Width = 129
+                Height = 33
+                Caption = 'EXECUTA'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                OnClick = SpeedButton24Click
+              end
+              object SpeedButton25: TSpeedButton
+                Left = 72
+                Top = 384
+                Width = 129
+                Height = 33
+                Caption = 'ANULEAZA'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                OnClick = SpeedButton25Click
+              end
+              object Edit3: TEdit
+                Left = 24
+                Top = 16
+                Width = 225
+                Height = 26
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 0
+                TextHint = 'MARCA'
+                OnKeyPress = Edit3KeyPress
+              end
+              object Edit4: TEdit
+                Left = 24
+                Top = 48
+                Width = 225
+                Height = 26
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 1
+                TextHint = 'MODEL'
+                OnKeyPress = Edit3KeyPress
+              end
+              object Edit5: TEdit
+                Left = 24
+                Top = 88
+                Width = 225
+                Height = 26
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 2
+                TextHint = 'CAROSERIE'
+                OnKeyPress = Edit3KeyPress
+              end
+              object Edit6: TEdit
+                Left = 24
+                Top = 128
+                Width = 225
+                Height = 26
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 3
+                TextHint = 'CULOARE'
+                OnKeyPress = Edit3KeyPress
+              end
+              object Edit7: TEdit
+                Left = 24
+                Top = 168
+                Width = 225
+                Height = 26
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 4
+                TextHint = 'CP MOTOR'
+              end
+              object Edit8: TEdit
+                Left = 24
+                Top = 259
+                Width = 225
+                Height = 26
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 5
+                TextHint = 'NR INMATRICULARE'
+              end
+              object ComboBox1: TComboBox
+                Left = 24
+                Top = 214
+                Width = 225
+                Height = 29
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 6
+                TextHint = 'COMBUSTIBIL'
+                Items.Strings = (
+                  'BENZINA'
+                  'MOTORINA'
+                  'HYBRID'
+                  'ELECTRIC'
+                  'GAZ/PROPAN'
+                  'GAZ/METAN')
+              end
+            end
+            object TabSheet15: TTabSheet
+              Caption = 'EDITARE'
+              ImageIndex = 2
+              object SpeedButton26: TSpeedButton
+                Left = 271
+                Top = 24
+                Width = 34
+                Height = 26
+                Cursor = crHandPoint
+                Caption = '...'
+                Font.Charset = DEFAULT_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Segoe UI'
+                Font.Style = [fsBold]
+                ParentFont = False
+                OnClick = SpeedButton20Click
+              end
+              object SpeedButton27: TSpeedButton
+                Left = 271
+                Top = 56
+                Width = 34
+                Height = 26
+                Cursor = crHandPoint
+                Caption = '...'
+                Font.Charset = DEFAULT_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Segoe UI'
+                Font.Style = [fsBold]
+                ParentFont = False
+                OnClick = SpeedButton21Click
+              end
+              object SpeedButton28: TSpeedButton
+                Left = 271
+                Top = 96
+                Width = 34
+                Height = 26
+                Cursor = crHandPoint
+                Caption = '...'
+                Font.Charset = DEFAULT_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Segoe UI'
+                Font.Style = [fsBold]
+                ParentFont = False
+                OnClick = SpeedButton22Click
+              end
+              object SpeedButton29: TSpeedButton
+                Left = 271
+                Top = 136
+                Width = 34
+                Height = 26
+                Cursor = crHandPoint
+                Caption = '...'
+                Font.Charset = DEFAULT_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Segoe UI'
+                Font.Style = [fsBold]
+                ParentFont = False
+                OnClick = SpeedButton23Click
+              end
+              object SpeedButton30: TSpeedButton
+                Left = 80
+                Top = 336
+                Width = 129
+                Height = 33
+                Caption = 'EXECUTA'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                OnClick = SpeedButton30Click
+              end
+              object SpeedButton31: TSpeedButton
+                Left = 80
+                Top = 392
+                Width = 129
+                Height = 33
+                Caption = 'ANULEAZA'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                OnClick = SpeedButton31Click
+              end
+              object Edit9: TEdit
+                Left = 32
+                Top = 24
+                Width = 225
+                Height = 26
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 0
+                TextHint = 'MARCA'
+                OnKeyPress = Edit3KeyPress
+              end
+              object Edit10: TEdit
+                Left = 32
+                Top = 56
+                Width = 225
+                Height = 26
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 1
+                TextHint = 'MODEL'
+                OnKeyPress = Edit3KeyPress
+              end
+              object Edit11: TEdit
+                Left = 32
+                Top = 88
+                Width = 225
+                Height = 26
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 2
+                TextHint = 'CAROSERIE'
+                OnKeyPress = Edit3KeyPress
+              end
+              object Edit12: TEdit
+                Left = 32
+                Top = 136
+                Width = 225
+                Height = 26
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 3
+                TextHint = 'CULOARE'
+                OnKeyPress = Edit3KeyPress
+              end
+              object Edit13: TEdit
+                Left = 32
+                Top = 176
+                Width = 225
+                Height = 26
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 4
+                TextHint = 'CP MOTOR'
+              end
+              object Edit14: TEdit
+                Left = 32
+                Top = 267
+                Width = 225
+                Height = 26
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 5
+                TextHint = 'NR INMATRICULARE'
+              end
+              object ComboBox2: TComboBox
+                Left = 32
+                Top = 222
+                Width = 225
+                Height = 29
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentFont = False
+                TabOrder = 6
+                TextHint = 'COMBUSTIBIL'
+                Items.Strings = (
+                  'BENZINA'
+                  'MOTORINA'
+                  'HYBRID'
+                  'ELECTRIC'
+                  'GAZ/PROPAN'
+                  'GAZ/METAN')
+              end
+            end
+          end
+        end
+        object Panel18: TPanel
+          Left = 337
+          Top = 0
+          Width = 647
+          Height = 503
+          Align = alClient
+          Caption = ' '
+          Color = clHighlight
+          ParentBackground = False
+          TabOrder = 1
+          object DBGrid7: TDBGrid
+            Left = 1
+            Top = 1
+            Width = 645
+            Height = 501
+            Align = alClient
+            DataSource = DataModule2.DataSource7
+            Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+            TabOrder = 0
+            TitleFont.Charset = DEFAULT_CHARSET
+            TitleFont.Color = clWindowText
+            TitleFont.Height = -12
+            TitleFont.Name = 'Segoe UI'
+            TitleFont.Style = []
+            Columns = <
+              item
+                Expanded = False
+                FieldName = 'AUTOMOBIL_ID'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Title.Alignment = taCenter
+                Title.Caption = 'NR'
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'NR_AUTO'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Title.Caption = 'NR INMATR'
+                Width = 95
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'DENUMIRE'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Title.Caption = 'MARCA'
+                Width = 70
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'DENUMIRE_1'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Title.Caption = 'MODEL'
+                Width = 53
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'TIP_CAROSERIE'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Title.Caption = 'CAROSERIE'
+                Width = 81
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'NUME_CULOARE'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Title.Caption = 'CULOAREA'
+                Width = 78
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'MOTOR'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Title.Caption = 'CP'
+                Width = 40
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'COMBUSTIBIL'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -15
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Width = 112
+                Visible = True
+              end>
+          end
+        end
       end
       object TabSheet4: TTabSheet
         Caption = 'MODEL'
         ImageIndex = 3
+        object Panel15: TPanel
+          Left = 249
+          Top = 0
+          Width = 735
+          Height = 503
+          Align = alClient
+          TabOrder = 0
+          object DBGrid6: TDBGrid
+            Left = 1
+            Top = 1
+            Width = 733
+            Height = 501
+            Align = alClient
+            DataSource = DataModule2.DataSource6
+            Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+            TabOrder = 0
+            TitleFont.Charset = DEFAULT_CHARSET
+            TitleFont.Color = clWindowText
+            TitleFont.Height = -12
+            TitleFont.Name = 'Segoe UI'
+            TitleFont.Style = []
+            Columns = <
+              item
+                Alignment = taCenter
+                Expanded = False
+                FieldName = 'MODEL_ID'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Title.Alignment = taCenter
+                Title.Caption = 'NR'
+                Width = 73
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'DENUMIRE'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Title.Alignment = taCenter
+                Title.Caption = 'MODEL AUTOMOBIL'
+                Width = 147
+                Visible = True
+              end
+              item
+                Expanded = False
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Width = 114
+                Visible = True
+              end>
+          end
+        end
+        object Panel16: TPanel
+          Left = 0
+          Top = 0
+          Width = 249
+          Height = 503
+          Align = alLeft
+          TabOrder = 1
+          object SpeedButton13: TSpeedButton
+            Left = 56
+            Top = 160
+            Width = 137
+            Height = 49
+            Caption = 'SELECTEAZA'
+            Font.Charset = ANSI_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -17
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = SpeedButton13Click
+          end
+          object SpeedButton14: TSpeedButton
+            Left = 48
+            Top = 240
+            Width = 137
+            Height = 49
+            Caption = 'ANULEAZA'
+            Font.Charset = ANSI_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -17
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = SpeedButton14Click
+          end
+        end
       end
       object TabSheet5: TTabSheet
         Caption = 'MARCA'
         ImageIndex = 4
+        object Panel13: TPanel
+          Left = 249
+          Top = 0
+          Width = 735
+          Height = 503
+          Align = alClient
+          TabOrder = 0
+          ExplicitWidth = 731
+          ExplicitHeight = 491
+          object DBGrid5: TDBGrid
+            Left = 1
+            Top = 1
+            Width = 733
+            Height = 501
+            Align = alClient
+            DataSource = DataModule2.DataSource5
+            Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+            TabOrder = 0
+            TitleFont.Charset = DEFAULT_CHARSET
+            TitleFont.Color = clWindowText
+            TitleFont.Height = -12
+            TitleFont.Name = 'Segoe UI'
+            TitleFont.Style = []
+            Columns = <
+              item
+                Alignment = taCenter
+                Expanded = False
+                FieldName = 'MARCA_ID'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Title.Alignment = taCenter
+                Title.Caption = 'NR'
+                Width = 73
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'DENUMIRE'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Title.Alignment = taCenter
+                Title.Caption = 'MARCA'
+                Width = 132
+                Visible = True
+              end
+              item
+                Expanded = False
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Width = 114
+                Visible = True
+              end>
+          end
+        end
+        object Panel14: TPanel
+          Left = 0
+          Top = 0
+          Width = 249
+          Height = 503
+          Align = alLeft
+          TabOrder = 1
+          ExplicitHeight = 491
+          object SpeedButton11: TSpeedButton
+            Left = 56
+            Top = 160
+            Width = 137
+            Height = 49
+            Caption = 'SELECTEAZA'
+            Font.Charset = ANSI_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -17
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = SpeedButton11Click
+          end
+          object SpeedButton12: TSpeedButton
+            Left = 48
+            Top = 240
+            Width = 137
+            Height = 49
+            Caption = 'ANULEAZA'
+            Font.Charset = ANSI_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -17
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+        end
       end
       object TabSheet6: TTabSheet
         Caption = 'CULOARE'
         ImageIndex = 5
+        object Panel11: TPanel
+          Left = 249
+          Top = 0
+          Width = 735
+          Height = 503
+          Align = alClient
+          TabOrder = 0
+          object DBGrid4: TDBGrid
+            Left = 1
+            Top = 1
+            Width = 733
+            Height = 501
+            Align = alClient
+            DataSource = DataModule2.DataSource4
+            Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+            TabOrder = 0
+            TitleFont.Charset = DEFAULT_CHARSET
+            TitleFont.Color = clWindowText
+            TitleFont.Height = -12
+            TitleFont.Name = 'Segoe UI'
+            TitleFont.Style = []
+            Columns = <
+              item
+                Alignment = taCenter
+                Expanded = False
+                FieldName = 'CULOARE_ID'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Title.Alignment = taCenter
+                Title.Caption = 'NR'
+                Width = 73
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'NUME_CULOARE'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Title.Alignment = taCenter
+                Title.Caption = 'CULOAREA'
+                Width = 132
+                Visible = True
+              end
+              item
+                Expanded = False
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Width = 114
+                Visible = True
+              end>
+          end
+        end
+        object Panel12: TPanel
+          Left = 0
+          Top = 0
+          Width = 249
+          Height = 503
+          Align = alLeft
+          TabOrder = 1
+          object SpeedButton9: TSpeedButton
+            Left = 56
+            Top = 160
+            Width = 137
+            Height = 49
+            Caption = 'SELECTEAZA'
+            Font.Charset = ANSI_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -17
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = SpeedButton9Click
+          end
+          object SpeedButton10: TSpeedButton
+            Left = 48
+            Top = 240
+            Width = 137
+            Height = 49
+            Caption = 'ANULEAZA'
+            Font.Charset = ANSI_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -17
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = SpeedButton10Click
+          end
+        end
       end
       object TabSheet7: TTabSheet
         Caption = 'CAROSERIE'
         ImageIndex = 6
+        object Panel9: TPanel
+          Left = 0
+          Top = 0
+          Width = 249
+          Height = 503
+          Align = alLeft
+          TabOrder = 0
+          object SpeedButton7: TSpeedButton
+            Left = 56
+            Top = 160
+            Width = 137
+            Height = 49
+            Caption = 'SELECTEAZA'
+            Font.Charset = ANSI_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -17
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = SpeedButton7Click
+          end
+          object SpeedButton8: TSpeedButton
+            Left = 48
+            Top = 240
+            Width = 137
+            Height = 49
+            Caption = 'ANULEAZA'
+            Font.Charset = ANSI_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -17
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = SpeedButton8Click
+          end
+        end
+        object Panel10: TPanel
+          Left = 249
+          Top = 0
+          Width = 735
+          Height = 503
+          Align = alClient
+          TabOrder = 1
+          object DBGrid3: TDBGrid
+            Left = 1
+            Top = 1
+            Width = 733
+            Height = 501
+            Align = alClient
+            DataSource = DataModule2.DataSource3
+            TabOrder = 0
+            TitleFont.Charset = DEFAULT_CHARSET
+            TitleFont.Color = clWindowText
+            TitleFont.Height = -12
+            TitleFont.Name = 'Segoe UI'
+            TitleFont.Style = []
+            Columns = <
+              item
+                Alignment = taCenter
+                Expanded = False
+                FieldName = 'CAROSERIE_ID'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Title.Alignment = taCenter
+                Title.Caption = 'NR'
+                Width = 73
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'TIP_CAROSERIE'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Title.Alignment = taCenter
+                Title.Caption = 'CAROSERIE'
+                Width = 132
+                Visible = True
+              end
+              item
+                Expanded = False
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Width = 114
+                Visible = True
+              end>
+          end
+        end
       end
       object TabSheet8: TTabSheet
         Caption = 'TIP'
         ImageIndex = 7
+        object Panel19: TPanel
+          Left = 249
+          Top = 0
+          Width = 735
+          Height = 503
+          Align = alClient
+          TabOrder = 0
+          object DBGrid8: TDBGrid
+            Left = 1
+            Top = 1
+            Width = 733
+            Height = 501
+            Align = alClient
+            DataSource = DataModule2.DataSource8
+            TabOrder = 0
+            TitleFont.Charset = DEFAULT_CHARSET
+            TitleFont.Color = clWindowText
+            TitleFont.Height = -12
+            TitleFont.Name = 'Segoe UI'
+            TitleFont.Style = []
+            Columns = <
+              item
+                Alignment = taCenter
+                Expanded = False
+                FieldName = 'TIP_ID'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Title.Alignment = taCenter
+                Title.Caption = 'NR'
+                Width = 73
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'TIP_TAXI'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Title.Alignment = taCenter
+                Title.Caption = 'TIP'
+                Width = 132
+                Visible = True
+              end
+              item
+                Expanded = False
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -17
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Width = 114
+                Visible = True
+              end>
+          end
+        end
+        object Panel20: TPanel
+          Left = 0
+          Top = 0
+          Width = 249
+          Height = 503
+          Align = alLeft
+          TabOrder = 1
+          object SpeedButton32: TSpeedButton
+            Left = 56
+            Top = 160
+            Width = 137
+            Height = 49
+            Caption = 'SELECTEAZA'
+            Font.Charset = ANSI_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -17
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object SpeedButton33: TSpeedButton
+            Left = 56
+            Top = 240
+            Width = 137
+            Height = 49
+            Caption = 'ANULEAZA'
+            Font.Charset = ANSI_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -17
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+        end
       end
       object TabSheet9: TTabSheet
         Caption = 'LOCALITATE'
@@ -1744,12 +3442,10 @@ object Form1: TForm1
           Font.Style = [fsBold]
           ParentFont = False
           TabOrder = 0
-          ExplicitLeft = 3
-          ExplicitTop = 16
           object SpeedButton5: TSpeedButton
             Left = 32
-            Top = 160
-            Width = 145
+            Top = 320
+            Width = 161
             Height = 46
             Caption = 'SELECTEAZA'
             Font.Charset = ANSI_CHARSET
@@ -1758,30 +3454,97 @@ object Form1: TForm1
             Font.Name = 'Tahoma'
             Font.Style = [fsBold]
             ParentFont = False
+            OnClick = SpeedButton5Click
           end
           object SpeedButton6: TSpeedButton
             Left = 32
-            Top = 248
-            Width = 145
+            Top = 384
+            Width = 161
             Height = 46
             Caption = 'ANULEAZA'
+            OnClick = SpeedButton6Click
+          end
+          object GroupBox1: TGroupBox
+            Left = 16
+            Top = 18
+            Width = 193
+            Height = 248
+            Caption = 'CAUTARE INFO'
+            TabOrder = 0
+            object RadioButton1: TRadioButton
+              Left = 24
+              Top = 64
+              Width = 113
+              Height = 17
+              Caption = 'RAION'
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -17
+              Font.Name = 'Tahoma'
+              Font.Style = [fsBold]
+              ParentFont = False
+              TabOrder = 0
+              OnClick = RadioButton1Click
+            end
+            object RadioButton2: TRadioButton
+              Left = 24
+              Top = 104
+              Width = 145
+              Height = 17
+              Caption = 'LOCALITATEA'
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -17
+              Font.Name = 'Tahoma'
+              Font.Style = [fsBold]
+              ParentFont = False
+              TabOrder = 1
+              OnClick = RadioButton2Click
+            end
+            object RadioButton3: TRadioButton
+              Left = 24
+              Top = 144
+              Width = 113
+              Height = 17
+              Caption = 'STRADA'
+              Checked = True
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -17
+              Font.Name = 'Tahoma'
+              Font.Style = [fsBold]
+              ParentFont = False
+              TabOrder = 2
+              TabStop = True
+              OnClick = RadioButton3Click
+            end
+            object Edit15: TEdit
+              Left = 16
+              Top = 184
+              Width = 153
+              Height = 29
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -17
+              Font.Name = 'Tahoma'
+              Font.Style = [fsBold]
+              ParentFont = False
+              TabOrder = 3
+              OnChange = Edit15Change
+            end
           end
         end
         object Panel8: TPanel
           Left = 241
           Top = 0
-          Width = 678
+          Width = 743
           Height = 503
           Align = alClient
           TabOrder = 1
-          ExplicitLeft = 584
-          ExplicitTop = 160
-          ExplicitWidth = 185
-          ExplicitHeight = 41
           object DBGrid2: TDBGrid
             Left = 1
             Top = 1
-            Width = 676
+            Width = 741
             Height = 501
             Align = alClient
             DataSource = DataModule2.DataSource2
@@ -1799,18 +3562,30 @@ object Form1: TForm1
                 FieldName = 'STRADA_ID'
                 Title.Alignment = taCenter
                 Title.Caption = 'NR'
-                Width = 83
+                Width = 68
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'DENUMIRE_1'
+                Title.Alignment = taCenter
+                Title.Caption = 'STRADA'
+                Width = 97
                 Visible = True
               end
               item
                 Expanded = False
                 FieldName = 'DENUMIRE'
                 Title.Alignment = taCenter
-                Width = 99
+                Title.Caption = 'LOCALITATEA'
+                Width = 103
                 Visible = True
               end
               item
                 Expanded = False
+                FieldName = 'RAION'
+                Title.Alignment = taCenter
+                Width = 88
                 Visible = True
               end>
           end
@@ -1826,8 +3601,6 @@ object Form1: TForm1
           Height = 503
           Align = alLeft
           TabOrder = 0
-          ExplicitLeft = -6
-          ExplicitTop = -3
           object SpeedButton3: TSpeedButton
             Left = 32
             Top = 152
@@ -1840,6 +3613,7 @@ object Form1: TForm1
             Font.Name = 'Tahoma'
             Font.Style = [fsBold]
             ParentFont = False
+            OnClick = SpeedButton3Click
           end
           object SpeedButton4: TSpeedButton
             Left = 32
@@ -1859,19 +3633,15 @@ object Form1: TForm1
         object Panel6: TPanel
           Left = 249
           Top = 0
-          Width = 670
+          Width = 735
           Height = 503
           Align = alClient
           TabOrder = 1
           OnResize = Panel6Resize
-          ExplicitLeft = 424
-          ExplicitTop = 184
-          ExplicitWidth = 185
-          ExplicitHeight = 41
           object DBGrid1: TDBGrid
             Left = 1
             Top = 1
-            Width = 668
+            Width = 733
             Height = 501
             Align = alClient
             DataSource = DataModule2.DataSource1
@@ -1923,9 +3693,11 @@ object Form1: TForm1
   object Panel3: TPanel
     Left = 0
     Top = 576
-    Width = 929
+    Width = 994
     Height = 46
     Align = alBottom
     TabOrder = 2
+    ExplicitTop = 564
+    ExplicitWidth = 990
   end
 end
